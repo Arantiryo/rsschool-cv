@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+body { font-family: 'Muli', sans-serif; }
+
+main {
+  display: grid;
+  grid-template-areas: 
+    ".  topbar      ."
+    ".  content-1   ."
+    ".  content-2   ."
+    ".  footer      .";
+
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+header {
+  grid-area: topbar;
+
+
+  margin: auto;
+}
+
+footer { 
+  grid-area: footer; 
+
+  height: 7rem;
+  background-color: lightgrey;
+}
+
+.content-1 { grid-area: content-1; }
+.content-2 { grid-area: content-2; }
+
+.row { display: flex; }
+
+.column { 
+  flex: 50%; 
+  margin: 1rem;
+}
+
+#profile_pic { border-radius: 50%; }
