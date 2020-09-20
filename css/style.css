@@ -11,7 +11,6 @@ main {
     ".  footer      .";
 
   grid-template-columns: 1fr 2fr 1fr;
-  
 }
 
 header {
@@ -21,10 +20,15 @@ header {
   margin: auto;
 }
 
+footer { 
+  grid-area: footer; 
+
+  height: 7rem;
+  background-color: lightgrey;
+}
+
 .content-1 { grid-area: content-1; }
 .content-2 { grid-area: content-2; }
-
-footer { grid-area: footer; }
 
 .row { display: flex; }
 
