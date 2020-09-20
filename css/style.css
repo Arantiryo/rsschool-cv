@@ -1,6 +1,21 @@
 main {
-  max-width: 400px;
-  margin: auto;
+  display: grid;
+  grid-template-areas: 
+    ".  topbar   ."
+    ".  content  ."
+    ".  footer   .";
+}
+
+header {
+  grid-area: topbar;
+}
+
+section {
+  grid-area: content;
+}
+
+footer {
+  grid-area: footer;
 }
 
 #profile_pic {
