@@ -1,10 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
 
-body { font-family: 'Muli', sans-serif; }
+body {
+  font-family: "Muli", sans-serif;
+  padding: 0;
+  margin: 0;
+}
 
 main {
   display: grid;
-  grid-template-areas: 
+  grid-template-areas:
     ".  topbar      ."
     ".  content-1   ."
     ".  content-2   ."
@@ -16,25 +20,42 @@ main {
 header {
   grid-area: topbar;
 
-
   margin: auto;
 }
 
-footer { 
-  grid-area: footer; 
+footer {
+  grid-area: footer;
 
-  height: 7rem;
+  height: 8rem;
   background-color: lightgrey;
 }
 
-.content-1 { grid-area: content-1; }
-.content-2 { grid-area: content-2; }
+address {
+  font-style: normal;
+}
 
-.row { display: flex; }
+.content-1 {
+  grid-area: content-1;
+}
+.content-2 {
+  grid-area: content-2;
+}
 
-.column { 
-  flex: 50%; 
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
   margin: 1rem;
 }
 
-#profile_pic { border-radius: 50%; }
+.logo-wrapper {
+  width: 4rem;
+  height: 2rem;
+}
+
+#profile_pic {
+  margin-top: 1rem;
+  border-radius: 50%;
+}
