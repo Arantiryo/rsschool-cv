@@ -3,7 +3,7 @@ Ivan Tsenilov
 
 Address
 --------- 
-1 Fun Street                        
+Lakina st, 66                       
 Murom                               
 Russia                              
   
@@ -11,9 +11,9 @@ Russia
 Contact information
 ---------
 
-ivantsenilov@gmail.com
-@my_social_media
-+7-my-phone-number
+ivantsenilov@gmail.com              
+[@ivan_tsenilov](https://instagram.com/ivan_tsenilov)               
++7-999-612-95-11            
 
 
 Education
@@ -37,10 +37,10 @@ Experience
 
 Worked with a team on a web application that helps control a budget of 
 a mid-sized organization. The app increased employee accountability and 
-provided a convinient tool for keeping track of budget operations.
+provided a convenient tool for keeping track of budget operations.
 Technologies used: 
 * javascript, jQuery, Bootstrap, HTML and CSS for frontend;
-* Transact-SQL for getting data from a MS Server database.
+* Transact-SQL for retrieving data from a MS Server database.
 
 **The place I worked at before:**
 
@@ -57,11 +57,26 @@ Programming Languages
     started learning other frameworks such as React.js and Node.js.
 
 **PHP:** Was used as a primary language when I was developing a web-application
-    when working at the university. Know the basics of the language though haven't 
+    while working at the university. I know the basics of the language though haven't 
     had a chance to use it as of late.
 
 Basic knowledge of **HTML**, **CSS**, **git**
 
+
+Code Example
+----------
+
+Write a function that takes an array and counts the number of each unique element present.  
+count(['james', 'james', 'john'])  #=>  { 'james': 2, 'john': 1}
+```
+function count(array){
+  const unique = new Set(array);
+  
+  let obj = {};
+  unique.forEach( (item) => obj[item] = array.filter(x => x === item).length );
+  return obj;
+}
+```
 
 Additional information
 ----------------------------------------
