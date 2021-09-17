@@ -4,16 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
     <title>Ivan's CV</title>
 </head>
 <body>
-    <main>
+    <div class="app">
         <header>
-            <img id="profile_pic" src="img/its_just_me.png" alt="My picture">
-            <h1>Ivan Tsenilov</h1>
-            <h3>Front-end web developer</h3>    
+            <img id="profile_pic" src="img/its_just_me.png" alt="My picture" class="header__img">
+            <h1 class="header__text">Ivan Tsenilov</h1>
+            <h3 class="header__subheader-text">Front-end web developer</h3>    
         </header>
-
+        
         <section class="row content-1">
             <div class="column">
                 <h3>Education</h3>
@@ -67,6 +70,24 @@
                 <p>Spent 5 months in the USA as a Work and Travel student that helped me improve
                 my English speaking skills a lot. Also learned what it is like to work in a team
                 and deal with high-intensity work environment.</p>
+                <p>Currently I'm taking part in a Front-End Development course by RSSchool that has
+                already significantly improved my code quality and fundamentals. In spare time I'm 
+                also learning React.js and MERN stack.</p>
+            </div>
+        </section>
+
+        <section class="row content-3">
+            <div class="code-example">
+                <h3>Code example</h3>
+                
+<pre><code class="language-javascript">function uncurry(fn) {
+    return function(...args) {
+        while (typeof fn === 'function' && fn.length <= args.length) {
+            fn = fn(...args.splice(0, fn.length))
+        }
+        return fn
+    }
+}</code></pre>
             </div>
         </section>
 
@@ -76,7 +97,7 @@
                     <address><strong>Address:</strong> 66 Lakina Street, Murom, Russia</address> 
                 </div>
                 <div class="column">
-                    <email><strong>Email:</strong> ivantsenilov@gmail.com</email> 
+                    <span><strong>Email:</strong> ivantsenilov@gmail.com</span> 
                 </div>
             </div>
             <div class="row">
@@ -88,6 +109,6 @@
                 </div>
             </div>
         </footer>
-    </main>
+    </div>
 </body>
 </html>
