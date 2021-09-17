@@ -12,6 +12,7 @@ main {
     ".  topbar      ."
     ".  content-1   ."
     ".  content-2   ."
+    ".  content-3   ."
     ".  footer      .";
 
   grid-template-columns: 1fr 2fr 1fr;
@@ -40,6 +41,10 @@ address {
 .content-2 {
   grid-area: content-2;
 }
+.content-3 {
+  grid-area: content-3;
+}
+
 
 .row {
   display: flex;
@@ -47,6 +52,11 @@ address {
 
 .column {
   flex: 50%;
+  margin: 1rem;
+}
+
+.code-example {
+  flex: 100%;
   margin: 1rem;
 }
 
@@ -58,4 +68,22 @@ address {
 #profile_pic {
   margin-top: 1rem;
   border-radius: 50%;
+}
+
+@media screen and (max-width: 600px) {
+  footer {
+    height: 16rem;
+  }
+  .row {
+    flex-direction: column;
+  } 
+  .code-example {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  footer {
+    height: 17rem;
+  }
 }
