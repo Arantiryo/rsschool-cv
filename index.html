@@ -82,7 +82,7 @@
                 
 <pre><code class="language-javascript">function uncurry(fn) {
     return function(...args) {
-        while (typeof fn === 'function' && fn.length &lt; args.length) {
+        while (typeof fn === 'function' && fn.length &lt;= args.length) {
             fn = fn(...args.splice(0, fn.length))
         }
         return fn
