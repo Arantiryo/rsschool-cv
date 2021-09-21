@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+
+body {
+  font-family: "Muli", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.app {
+  display: grid;
+  grid-template-areas:
+    ".  topbar      ."
+    ".  content-1   ."
+    ".  content-2   ."
+    ".  content-3   ."
+    ".  footer      .";
+
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+header {
+  grid-area: topbar;
+
+  margin: auto;
+  align-content: center;
+}
+
+footer {
+  grid-area: footer;
+
+  height: 8rem;
+  padding-bottom: 0.5rem;
+  background-color: lightgrey;
+}
+
+address {
+  font-style: normal;
+}
+
+.content-1 {
+  grid-area: content-1;
+}
+.content-2 {
+  grid-area: content-2;
+}
+.content-3 {
+  grid-area: content-3;
+}
+
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+  margin: 1rem;
+}
+
+.code-example {
+  flex: 100%;
+  margin: 1rem;
+}
+
+.logo-wrapper {
+  width: 4rem;
+  height: 2rem;
+}
+
+.header__img{
+  display: block;
+  margin: auto;
+}
+
+.header__text, .header__subheader-text {
+  text-align: center;
+}
+
+#profile_pic {
+  margin-top: 1rem;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 600px) {
+  footer {
+    height: 16rem;
+    
+  }
+  .row {
+    flex-direction: column;
+  }
+  .code-example {
+    display: none;
+  }
+}
